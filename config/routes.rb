@@ -1,4 +1,9 @@
 Omrails::Application.routes.draw do
+  get 'about' => 'pages#about'
+
+  get 'cursos' => 'pages#cursos'
+  root :to => 'Pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
